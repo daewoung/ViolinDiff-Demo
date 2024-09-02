@@ -25,6 +25,16 @@ title: Home
 
   </header>
 
+
+
+
+  <section class="abstract-section">
+    <h2>Abstract</h2>
+    <p class="message">
+      Synthesizing expressive violin performances is a complex task due to the need for intricate pitch variations, such as vibrato and glissando, which are often missing in standard MIDI data. To address this, we introduce a two-stage neural synthesis framework. The first stage, DiffBend, estimates the missing pitch bend information, while the second stage, DiffSynth, generates high-fidelity audio incorporating these expressive details. Our method is evaluated using Fréchet Audio Distance (FAD) and vibrato-specific metrics, demonstrating superior performance in both audio quality and expressiveness compared to existing methods. This highlights the critical role of accurate pitch bend modeling in improving the realism of synthesized violin performances.    
+    </p>
+  </section>
+
   <section class="bend-roll-section">
     <h2>Bend Roll</h2>
     <img src="images/bendroll1.png" alt="Bend Roll Example 1" style="width: 100%; max-width: 600px; margin-top: 20px;">
@@ -32,14 +42,6 @@ title: Home
     <p class="message">
       Pitch bends in MIDI data present a unique challenge due to their fine temporal granularity, which is not well captured by traditional fixed-time piano roll representations. To address this, we aggregate all pitch bend information that falls within each fixed time frame of the piano roll. Each pitch bend value, \( b_i \), is converted to semitone units and weighted by its corresponding duration \( d_i \) within that time frame. The aggregated bend roll is then computed for the entire sequence as shown in the equation below:
       This weighted averaging process allows us to accurately capture the pitch bend information within the fixed time bins of the piano roll, ensuring that the expressive nuances of the bends are well-preserved. These bend roll features are crucial for modeling pitch variations in both the DiffSynth and DiffBend architectures.
-    </p>
-  </section>
-
-  
-  <section class="abstract-section">
-    <h2>Abstract</h2>
-    <p class="message">
-      Synthesizing expressive violin performances is a complex task due to the need for intricate pitch variations, such as vibrato and glissando, which are often missing in standard MIDI data. To address this, we introduce a two-stage neural synthesis framework. The first stage, DiffBend, estimates the missing pitch bend information, while the second stage, DiffSynth, generates high-fidelity audio incorporating these expressive details. Our method is evaluated using Fréchet Audio Distance (FAD) and vibrato-specific metrics, demonstrating superior performance in both audio quality and expressiveness compared to existing methods. This highlights the critical role of accurate pitch bend modeling in improving the realism of synthesized violin performances.    
     </p>
   </section>
 
