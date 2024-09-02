@@ -32,6 +32,15 @@ title: Home
     </p>
   </section>
 
+  <section class="model-architecture-section">
+    <h2>Model Architecture</h2>
+    <p class="message">
+      The DiffSynth model processes inputs including the Mel-spectrogram, diffusion time step, performer ID, and piano rolls, using a GRU layer and Transformer Encoder Blocks to generate a feature sequence for denoising. DiffBend modifies this by directly handling the pitch bend roll and applying a selective noise addition strategy to focus on dynamic pitch variations. These models together enhance the expressiveness of synthesized violin performances by effectively incorporating detailed pitch variations.
+    </p>
+    <img src="path_to_your_image/model_architecture.png" alt="Model Architecture Diagram" style="width: 100%; max-width: 600px; margin-top: 20px;">
+  </section>
+
+
 <!--   
   <div class="text-center">
     <p>
