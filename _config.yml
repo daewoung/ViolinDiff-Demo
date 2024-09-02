@@ -1,4 +1,4 @@
-title:               Celeste
+title:               Violin Diffusion
 url:                 https://daewoung.github.io
 baseurl:             ""
 
@@ -19,9 +19,9 @@ sass:
   style:             :compressed
 
 author:
-  name:              Nico Elayda
-  url:               nicoelayda.github.io
-  email:             nico@elayda.com
+  name:              Daewoong Kim
+  url:               daewoung.github.io
+  email:             nueyet@naver.com
 
 plugins:
   - jekyll-coffeescript
