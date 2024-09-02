@@ -3,20 +3,47 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+<head>
+  <style>
+    .audio-comparison {
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      border: 1px solid #e0e0e0;
+      background-color: #f9f9f9;
+    }
 
-Celeste is a lightweight Jekyll theme that features a minimalist, content-first design. It places your content center stage and lets your readers view them in a clutter-free environment without visual distractions. It is based on [Poole](https://github.com/poole/poole), the Jekyll butler, by [@mdo](https://twitter.com/mdo).
+    .audio-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
 
-In addition to using Poole as its foundation, Celeste is also built using the following open-source projects:
+    .audio-block {
+      width: 30%;
+      text-align: center;
+    }
 
-* [normalize.css](http://necolas.github.io/normalize.css/), a modern, HTML5-ready alternative to CSS resets.
-* [Font Awesome](https://fontawesome.com/v4.7.0/), the iconic font and CSS toolkit.
-* [Hover.css](http://ianlunn.github.io/Hover/), a collection of CSS3 powered hover effects.
+    audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+  </style>
+</head>
 
-Celeste is <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by [@nicoelayda](https://github.com/nicoelayda). Learn more and contribute on [GitHub](https://github.com/nicoelayda/celeste).
+<div class="page">
+  <header>
+    <h1 class="landing-title">Violin Diffusion: Audio Examples</h1>
+  </header>
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/nicoelayda/celeste/issues/new) or [ask me on Twitter](https://twitter.com/nicoelayda).
+  <section class="audio-comparison">
+    <h2>BWV 1005: IV. Allegro assai</h2>
+    <div class="audio-container">
+      <div class="audio-block">
+        <p>Original Audio</p>
+        <audio controls>
+          <source src="listening_test/bend_segment_allegro_performer_AntalZalai.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
 
-Thanks for reading!
