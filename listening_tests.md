@@ -40,7 +40,7 @@ title: Listening Tests Examples
       <div class="audio-block">
         <p>Original Audio</p>
         <audio controls>
-          <source src="listening_test/bend_segment_allegro_performer_AntalZalai.mp3" type="audio/mpeg">
+          <source src="listening_test/bend_segment_allegro_performer_AntalZalai.mp3">
           Your browser does not support the audio element.
         </audio>
       </div>
