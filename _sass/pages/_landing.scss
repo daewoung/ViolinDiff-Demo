@@ -10,3 +10,11 @@
     padding-bottom: 0.7rem;
     font-size: 3.5em;
 }
+
+.authors {
+    font-size: 1.25em; /* Font size for author names */
+    font-style: italic; /* Italicize author names */
+    margin-top: 5px;
+    color: #555; /* A lighter color to distinguish from the title */
+    text-align: center; /* Center the author names */
+}
