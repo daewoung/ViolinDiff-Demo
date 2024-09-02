@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Listening Tests Examples
 ---
 
 <head>
@@ -32,9 +32,7 @@ title: About
 </head>
 
 <div class="page">
-  <header>
-    <h1 class="landing-title">Violin Diffusion: Audio Examples</h1>
-  </header>
+
 
   <section class="audio-comparison">
     <h2>BWV 1005: IV. Allegro assai</h2>
@@ -42,7 +40,7 @@ title: About
       <div class="audio-block">
         <p>Original Audio</p>
         <audio controls>
-          <source src="listening_test/bend_segment_allegro_performer_AntalZalai.wav" type="audio/wav">
+          <source src="listening_test/bend_segment_allegro_performer_AntalZalai.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
       </div>
