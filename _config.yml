@@ -1,6 +1,6 @@
 title:               Violin Diffusion
 url:                 https://daewoung.github.io/ViolinDiff-Demo/
-baseurl:             https://daewoung.github.io/ViolinDiff-Demo/
+baseurl:             https://daewoung.github.io/ViolinDiff-Demo
 
 markdown:            kramdown
 highlighter:         rouge
