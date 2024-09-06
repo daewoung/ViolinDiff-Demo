@@ -20,7 +20,7 @@ title: Listening Tests Examples
     }
 
     .audio-block {
-      width: 30%;
+      width: 50%;
       text-align: center;
     }
 
