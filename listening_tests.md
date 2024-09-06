@@ -35,7 +35,7 @@ title: Listening Tests Examples
 
   hi
   <section class="audio-comparison">
-    <h2>Kayser_Op20-36_performer_2.wav</h2>
+    <h2>Kayser_Op20-36</h2>
     <div class="audio-container">
       <div class="audio-block">
         <p>Original Audio</p>
@@ -83,7 +83,7 @@ title: Listening Tests Examples
   </section>
   
   <section class="audio-comparison">
-    <h2>ysaye_performer_12.wav</h2>
+    <h2>(Zero Shot) Ysaÿe - Sonata No.3 in D minor</h2>
     <div class="audio-container">
       <div class="audio-block">
         <p>Original Audio</p>
@@ -131,7 +131,7 @@ title: Listening Tests Examples
   </section>
   
   <section class="audio-comparison">
-    <h2>Paganini_Op01-13_performer_15.wav</h2>
+    <h2>Paganini_Op01-13</h2>
     <div class="audio-container">
       <div class="audio-block">
         <p>Original Audio</p>
@@ -179,7 +179,7 @@ title: Listening Tests Examples
   </section>
   
   <section class="audio-comparison">
-    <h2>Paganini_Op01-05_performer_12.wav</h2>
+    <h2>Paganini_Op01-05</h2>
     <div class="audio-container">
       <div class="audio-block">
         <p>Original Audio</p>
@@ -227,7 +227,7 @@ title: Listening Tests Examples
   </section>
   
   <section class="audio-comparison">
-    <h2>allegro_performer_13.wav</h2>
+    <h2>(Zero Shot) BWV 1005: IV. Allegro assai</h2>
     <div class="audio-container">
       <div class="audio-block">
         <p>Original Audio</p>
@@ -275,7 +275,7 @@ title: Listening Tests Examples
   </section>
   
   <section class="audio-comparison">
-    <h2>Paganini_Op01-24_performer_15.wav</h2>
+    <h2>Paganini_Op01-24</h2>
     <div class="audio-container">
       <div class="audio-block">
         <p>Original Audio</p>
@@ -323,7 +323,7 @@ title: Listening Tests Examples
   </section>
   
   <section class="audio-comparison">
-    <h2>Wohlfahrt_Op45-60_performer_1.wav</h2>
+    <h2>Wohlfahrt_Op45-60</h2>
     <div class="audio-container">
       <div class="audio-block">
         <p>Original Audio</p>
@@ -371,7 +371,7 @@ title: Listening Tests Examples
   </section>
   
   <section class="audio-comparison">
-    <h2>thais_performer_12.wav</h2>
+    <h2>(Zero Shot) Thaïs - Méditation</h2>
     <div class="audio-container">
       <div class="audio-block">
         <p>Original Audio</p>
@@ -419,7 +419,7 @@ title: Listening Tests Examples
   </section>
   
   <section class="audio-comparison">
-    <h2>Paganini_Op01-24_performer_12.wav</h2>
+    <h2>Paganini_Op01-24.wav</h2>
     <div class="audio-container">
       <div class="audio-block">
         <p>Original Audio</p>
@@ -467,7 +467,7 @@ title: Listening Tests Examples
   </section>
   
   <section class="audio-comparison">
-    <h2>Paganini_Op01-13_performer_13.wav</h2>
+    <h2>Paganini_Op01-13.wav</h2>
     <div class="audio-container">
       <div class="audio-block">
         <p>Original Audio</p>
