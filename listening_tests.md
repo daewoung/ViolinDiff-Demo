@@ -2,15 +2,9 @@
 layout: page
 title: Listening Tests Examples
 ---
-
 <head>
   <style>
     .audio-comparison {
-      /* padding: 20px;
-      margin-bottom: 30px;
-      border-radius: 10px;
-      border: 1px solid #e0e0e0;
-      background-color: #f9f9f9; */
       padding: 20px;
       margin-bottom: 30px;
       border-radius: 10px;
@@ -28,17 +22,22 @@ title: Listening Tests Examples
     }
 
     .audio-block {
-      width: 50%;
+      width: 45%; /* 너비를 45%로 유지 */
       text-align: center;
-      margin-bottom: 10px;
+      margin-bottom: 10px; /* 아래 여백을 줄임 */
+    }
+
+    p {
+      margin-bottom: 5px; /* 텍스트 아래 간격 줄임 */
     }
 
     audio {
       width: 100%;
-      margin-top: 5px;
+      margin-top: 5px; /* 오디오 태그 위 간격 줄임 */
     }
   </style>
 </head>
+
 
 <div class="page">
 
