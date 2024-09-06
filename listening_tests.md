@@ -35,13 +35,481 @@ title: Listening Tests Examples
 
   hi
   <section class="audio-comparison">
-    <h2> (Zero Shot) BWV 1005: IV. Allegro assai</h2>
+    <h2>Kayser_Op20-36_performer_2.wav</h2>
     <div class="audio-container">
       <div class="audio-block">
         <p>Original Audio</p>
         <audio controls>
-          <source src="bend_segment_allegro_performer_AntalZalai.wav">
+          <source src="original_segment_Kayser_Op20-36_performer_2.wav">
           Your browser does not support the audio element.
         </audio>
       </div>
-
+      <div class="audio-block">
+        <p>Bend Model</p>
+        <audio controls>
+          <source src="bend_segment_Kayser_Op20-36_performer_2.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>NoBend Model</p>
+        <audio controls>
+          <source src="no_bend_segment_Kayser_Op20-36_performer_2.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Hawth.</p>
+        <audio controls>
+          <source src="magenta_segment_Kayser_Op20-36_performer_2.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Maman.</p>
+        <audio controls>
+          <source src="perfdiff_segment_Kayser_Op20-36_performer_2.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>GM</p>
+        <audio controls>
+          <source src="window_gm_segment_Kayser_Op20-36_performer_2.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </section>
+  
+  <section class="audio-comparison">
+    <h2>ysaye_performer_12.wav</h2>
+    <div class="audio-container">
+      <div class="audio-block">
+        <p>Original Audio</p>
+        <audio controls>
+          <source src="original_segment_ysaye_performer_12.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Bend Model</p>
+        <audio controls>
+          <source src="bend_segment_ysaye_performer_12.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>NoBend Model</p>
+        <audio controls>
+          <source src="no_bend_segment_ysaye_performer_12.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Hawth.</p>
+        <audio controls>
+          <source src="magenta_segment_ysaye_performer_12.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Maman.</p>
+        <audio controls>
+          <source src="perfdiff_segment_ysaye_performer_12.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>GM</p>
+        <audio controls>
+          <source src="window_gm_segment_ysaye_performer_12.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </section>
+  
+  <section class="audio-comparison">
+    <h2>Paganini_Op01-13_performer_15.wav</h2>
+    <div class="audio-container">
+      <div class="audio-block">
+        <p>Original Audio</p>
+        <audio controls>
+          <source src="original_segment_Paganini_Op01-13_performer_15.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Bend Model</p>
+        <audio controls>
+          <source src="bend_segment_Paganini_Op01-13_performer_15.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>NoBend Model</p>
+        <audio controls>
+          <source src="no_bend_segment_Paganini_Op01-13_performer_15.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Hawth.</p>
+        <audio controls>
+          <source src="magenta_segment_Paganini_Op01-13_performer_15.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Maman.</p>
+        <audio controls>
+          <source src="perfdiff_segment_Paganini_Op01-13_performer_15.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>GM</p>
+        <audio controls>
+          <source src="window_gm_segment_Paganini_Op01-13_performer_15.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </section>
+  
+  <section class="audio-comparison">
+    <h2>Paganini_Op01-05_performer_12.wav</h2>
+    <div class="audio-container">
+      <div class="audio-block">
+        <p>Original Audio</p>
+        <audio controls>
+          <source src="original_segment_Paganini_Op01-05_performer_12.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Bend Model</p>
+        <audio controls>
+          <source src="bend_segment_Paganini_Op01-05_performer_12.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>NoBend Model</p>
+        <audio controls>
+          <source src="no_bend_segment_Paganini_Op01-05_performer_12.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Hawth.</p>
+        <audio controls>
+          <source src="magenta_segment_Paganini_Op01-05_performer_12.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Maman.</p>
+        <audio controls>
+          <source src="perfdiff_segment_Paganini_Op01-05_performer_12.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>GM</p>
+        <audio controls>
+          <source src="window_gm_segment_Paganini_Op01-05_performer_12.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </section>
+  
+  <section class="audio-comparison">
+    <h2>allegro_performer_13.wav</h2>
+    <div class="audio-container">
+      <div class="audio-block">
+        <p>Original Audio</p>
+        <audio controls>
+          <source src="original_segment_allegro_performer_13.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Bend Model</p>
+        <audio controls>
+          <source src="bend_segment_allegro_performer_13.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>NoBend Model</p>
+        <audio controls>
+          <source src="no_bend_segment_allegro_performer_13.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Hawth.</p>
+        <audio controls>
+          <source src="magenta_segment_allegro_performer_13.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Maman.</p>
+        <audio controls>
+          <source src="perfdiff_segment_allegro_performer_13.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>GM</p>
+        <audio controls>
+          <source src="window_gm_segment_allegro_performer_13.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </section>
+  
+  <section class="audio-comparison">
+    <h2>Paganini_Op01-24_performer_15.wav</h2>
+    <div class="audio-container">
+      <div class="audio-block">
+        <p>Original Audio</p>
+        <audio controls>
+          <source src="original_segment_Paganini_Op01-24_performer_15.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Bend Model</p>
+        <audio controls>
+          <source src="bend_segment_Paganini_Op01-24_performer_15.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>NoBend Model</p>
+        <audio controls>
+          <source src="no_bend_segment_Paganini_Op01-24_performer_15.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Hawth.</p>
+        <audio controls>
+          <source src="magenta_segment_Paganini_Op01-24_performer_15.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Maman.</p>
+        <audio controls>
+          <source src="perfdiff_segment_Paganini_Op01-24_performer_15.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>GM</p>
+        <audio controls>
+          <source src="window_gm_segment_Paganini_Op01-24_performer_15.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </section>
+  
+  <section class="audio-comparison">
+    <h2>Wohlfahrt_Op45-60_performer_1.wav</h2>
+    <div class="audio-container">
+      <div class="audio-block">
+        <p>Original Audio</p>
+        <audio controls>
+          <source src="original_segment_Wohlfahrt_Op45-60_performer_1.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Bend Model</p>
+        <audio controls>
+          <source src="bend_segment_Wohlfahrt_Op45-60_performer_1.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>NoBend Model</p>
+        <audio controls>
+          <source src="no_bend_segment_Wohlfahrt_Op45-60_performer_1.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Hawth.</p>
+        <audio controls>
+          <source src="magenta_segment_Wohlfahrt_Op45-60_performer_1.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Maman.</p>
+        <audio controls>
+          <source src="perfdiff_segment_Wohlfahrt_Op45-60_performer_1.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>GM</p>
+        <audio controls>
+          <source src="window_gm_segment_Wohlfahrt_Op45-60_performer_1.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </section>
+  
+  <section class="audio-comparison">
+    <h2>thais_performer_12.wav</h2>
+    <div class="audio-container">
+      <div class="audio-block">
+        <p>Original Audio</p>
+        <audio controls>
+          <source src="original_segment_thais_performer_12.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Bend Model</p>
+        <audio controls>
+          <source src="bend_segment_thais_performer_12.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>NoBend Model</p>
+        <audio controls>
+          <source src="no_bend_segment_thais_performer_12.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Hawth.</p>
+        <audio controls>
+          <source src="magenta_segment_thais_performer_12.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Maman.</p>
+        <audio controls>
+          <source src="perfdiff_segment_thais_performer_12.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>GM</p>
+        <audio controls>
+          <source src="window_gm_segment_thais_performer_12.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </section>
+  
+  <section class="audio-comparison">
+    <h2>Paganini_Op01-24_performer_12.wav</h2>
+    <div class="audio-container">
+      <div class="audio-block">
+        <p>Original Audio</p>
+        <audio controls>
+          <source src="original_segment_Paganini_Op01-24_performer_12.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Bend Model</p>
+        <audio controls>
+          <source src="bend_segment_Paganini_Op01-24_performer_12.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>NoBend Model</p>
+        <audio controls>
+          <source src="no_bend_segment_Paganini_Op01-24_performer_12.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Hawth.</p>
+        <audio controls>
+          <source src="magenta_segment_Paganini_Op01-24_performer_12.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Maman.</p>
+        <audio controls>
+          <source src="perfdiff_segment_Paganini_Op01-24_performer_12.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>GM</p>
+        <audio controls>
+          <source src="window_gm_segment_Paganini_Op01-24_performer_12.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </section>
+  
+  <section class="audio-comparison">
+    <h2>Paganini_Op01-13_performer_13.wav</h2>
+    <div class="audio-container">
+      <div class="audio-block">
+        <p>Original Audio</p>
+        <audio controls>
+          <source src="original_segment_Paganini_Op01-13_performer_13.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Bend Model</p>
+        <audio controls>
+          <source src="bend_segment_Paganini_Op01-13_performer_13.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>NoBend Model</p>
+        <audio controls>
+          <source src="no_bend_segment_Paganini_Op01-13_performer_13.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Hawth.</p>
+        <audio controls>
+          <source src="magenta_segment_Paganini_Op01-13_performer_13.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Maman.</p>
+        <audio controls>
+          <source src="perfdiff_segment_Paganini_Op01-13_performer_13.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>GM</p>
+        <audio controls>
+          <source src="window_gm_segment_Paganini_Op01-13_performer_13.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </section>
