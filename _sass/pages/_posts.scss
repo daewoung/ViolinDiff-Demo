@@ -7,6 +7,9 @@
 .page,
 .post {
   margin-bottom: 4em;
+  width: 90%; /* Make the page take up 90% of the screen width */
+  max-width: 1200px; /* Set a maximum width to prevent it from getting too wide */
+
 }
 
 // Blog post or page title
