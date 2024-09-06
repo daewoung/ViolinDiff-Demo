@@ -41,13 +41,13 @@ title: Listening Test Examples
 
 <div class="page">
   <h2>Listening Test - Realism Evaluation</h2>
-  <p>We conducted a <strong>realism evaluation</strong> to assess how closely the synthesized audio matches real violin performances. Realism in this context refers to the perceived authenticity of the generated audio, specifically how natural and convincing the synthesized performances sound compared to real violin recordings.</p>
+  <p>We conducted a <strong>realism evaluation</strong> to focusing on how well the pitch expression and overall timbre of the synthesized samples matched those of actual violin performances. </p>
 
-  <p>The evaluation was carried out using the <strong>MUSHRA</strong> methodology, a standardized tool for subjective audio quality assessment. Participants rated multiple models, including:</p>
+  <p>The evaluation was carried out using the MUSHRA <cite>{1}</cite> protocol, a standardized tool for subjective audio quality assessment. Participants rated multiple models, including:</p>
 
   <ul>
-    <li><strong>Hawthorne et al.</strong> <cite>{multiinst}</cite>: A multi-instrument diffusion-based model focused on synthesizing various instruments in polyphonic contexts.</li>
-    <li><strong>Maman et al.</strong> <cite>{performerdiff}</cite>: A model using performer embeddings to better capture timbre and style in orchestral instrument synthesis.</li>
+    <li><strong>Hawthorne et al.</strong> <cite>{2}</cite>: A multi-instrument diffusion-based model focused on synthesizing various instruments in polyphonic contexts.</li>
+    <li><strong>Maman et al.</strong> <cite>{3}</cite>: A model using performer embeddings to better capture timbre and style in orchestral instrument synthesis.</li>
     <li><strong>Bends Model</strong>: Our Proposed model that includes pitch bend information to enhance expressiveness and realism.</li>
     <li><strong>NoBends Model</strong>: Against a version of DiffSynth trained without pitch bend information</li>
     <li><strong>GM Soundfont (Low Anchor)</strong>: The lowest quality baseline, serving as an anchor point for comparison.</li>
@@ -55,8 +55,9 @@ title: Listening Test Examples
 
   <h3>References</h3>
   <ol>
-    <li>Hawthorne, Curtis, et al. "Multi-instrument Music Synthesis with Diffusion Models." In Proceedings of the International Conference on Machine Learning (ICML), 2022.</li>
-    <li>Maman, L., et al. "Diffusion Models for Performer Embeddings: Enhancing Timbre and Style in Orchestral Instrument Synthesis." In Advances in Neural Information Processing Systems (NeurIPS), 2023.</li>
+    <li>ITU, “Method for the subjective assessment of intermediate quality level of audio systems,” BS.1534, 2014.</li>
+    <li>Hawthorne et al.“Multi-instrument music synthesis with spectrogram diffusion,” in Proceedings of the ISMIR, 2022</li>
+    <li>Maman et al. "Performance conditioning for diffusion-based multi-instrument music synthesis,” in ICASSP, 2024</li>
   </ol>
 
 
@@ -446,7 +447,7 @@ title: Listening Test Examples
   </section>
   
   <section class="audio-comparison">
-    <h2>Paganini_Op01-24.wav</h2>
+    <h2>Paganini_Op01-24</h2>
     <div class="audio-container">
       <div class="audio-block">
         <p>Original Audio</p>
@@ -494,7 +495,7 @@ title: Listening Test Examples
   </section>
   
   <section class="audio-comparison">
-    <h2>Paganini_Op01-13.wav</h2>
+    <h2>Paganini_Op01-13</h2>
     <div class="audio-container">
       <div class="audio-block">
         <p>Original Audio</p>
