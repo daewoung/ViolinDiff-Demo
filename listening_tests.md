@@ -46,10 +46,10 @@ title: Listening Test Examples
   <p>The evaluation was carried out using the MUSHRA <cite>{1}</cite> protocol, a standardized tool for subjective audio quality assessment. Participants rated multiple models, including:</p>
 
   <ul>
-    <li><strong>Hawthorne et al.</strong> <cite>{2}</cite>: A multi-instrument diffusion-based model focused on synthesizing various instruments in polyphonic contexts.</li>
-    <li><strong>Maman et al.</strong> <cite>{3}</cite>: A model using performer embeddings to better capture timbre and style in orchestral instrument synthesis.</li>
     <li><strong>Bends Model</strong>: Our Proposed model that includes pitch bend information to enhance expressiveness and realism.</li>
     <li><strong>NoBends Model</strong>: Against a version of DiffSynth trained without pitch bend information</li>
+    <li><strong>Hawthorne et al.</strong> <cite>{2}</cite>: A multi-instrument diffusion-based model focused on synthesizing various instruments in polyphonic contexts.</li>
+    <li><strong>Maman et al.</strong> <cite>{3}</cite>: A model using performer embeddings to better capture timbre and style in orchestral instrument synthesis.</li>
     <li><strong>GM Soundfont (Low Anchor)</strong>: The lowest quality baseline, serving as an anchor point for comparison.</li>
   </ul>
 
@@ -60,6 +60,7 @@ title: Listening Test Examples
     <li>Maman et al. "Performance conditioning for diffusion-based multi-instrument music synthesis,” in ICASSP, 2024</li>
   </ol>
 
+<p>We would like to extend our gratitude to Ben Maman for providing the essential test files, which greatly contributed to this evaluation.</p>
 
   
   <section class="audio-comparison">
