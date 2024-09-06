@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Listening Tests Examples
+title: Listening Test Examples
 ---
 <head>
   <style>
@@ -40,8 +40,27 @@ title: Listening Tests Examples
 
 
 <div class="page">
+  <h2>Listening Test - Realism Evaluation</h2>
+  <p>We conducted a <strong>realism evaluation</strong> to assess how closely the synthesized audio matches real violin performances. Realism in this context refers to the perceived authenticity of the generated audio, specifically how natural and convincing the synthesized performances sound compared to real violin recordings.</p>
 
-  hi
+  <p>The evaluation was carried out using the <strong>MUSHRA</strong> methodology, a standardized tool for subjective audio quality assessment. Participants rated multiple models, including:</p>
+
+  <ul>
+    <li><strong>Hawthorne et al.</strong> <cite>{multiinst}</cite>: A multi-instrument diffusion-based model focused on synthesizing various instruments in polyphonic contexts.</li>
+    <li><strong>Maman et al.</strong> <cite>{performerdiff}</cite>: A model using performer embeddings to better capture timbre and style in orchestral instrument synthesis.</li>
+    <li><strong>Bends Model</strong>: Our Proposed model that includes pitch bend information to enhance expressiveness and realism.</li>
+    <li><strong>NoBends Model</strong>: Against a version of DiffSynth trained without pitch bend information</li>
+    <li><strong>GM Soundfont (Low Anchor)</strong>: The lowest quality baseline, serving as an anchor point for comparison.</li>
+  </ul>
+
+  <h3>References</h3>
+  <ol>
+    <li>Hawthorne, Curtis, et al. "Multi-instrument Music Synthesis with Diffusion Models." In Proceedings of the International Conference on Machine Learning (ICML), 2022.</li>
+    <li>Maman, L., et al. "Diffusion Models for Performer Embeddings: Enhancing Timbre and Style in Orchestral Instrument Synthesis." In Advances in Neural Information Processing Systems (NeurIPS), 2023.</li>
+  </ol>
+
+
+  
   <section class="audio-comparison">
     <h2>Kayser_Op20-36</h2>
     <div class="audio-container">
