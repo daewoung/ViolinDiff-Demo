@@ -50,8 +50,9 @@ title: Home
     <img src="images/bendroll_2.png" alt="Bend Roll Example 2" style="width: 100%; max-width: 600px; margin-top: 20px;">
     <p class="message">
       To encode MIDI input, we employed the piano roll representation, which facilitates encoding polyphonic pitches while aligning them with the mel spectrogram at the frame level.To capture the onset and offset of each note alongside its frame-wise activation, we utilize three types of piano rolls: frame, onset, offset.
-      In addition to these binary piano rolls, pitch bend information is also included in the model's input. In MIDI, pitch bends are discrete events that specify a pitch bend value and its corresponding time, enabling smooth pitch changes. However, these events often occur more frequently than traditional piano roll representations can capture. Thus, we calculate frame-wise pitch bend values using a weighted average of pitch bend events within each frame, resulting in a continuous-valued matrix.    </p>
+      In addition to these binary piano rolls, pitch bend information is also included in the model's input. In MIDI, pitch bends are discrete events that specify a pitch bend value and its corresponding time, enabling smooth pitch changes. However, these events often occur more frequently than traditional piano roll representations can capture. Thus, we calculate frame-wise pitch bend values using a weighted average of pitch bend events within each frame, resulting in a continuous-valued matrix.   
       The encoded result \( R_{\text{bend}} \in (-1, 1)^{P \times T} \) is computed using the equation below:
+      </p>
       <p class="equation">
         The encoded result $R_{\text{bend}} \in (-1, 1)^{P \times T}$ is computed using the equation below:
       $$ R_\text{bend}(p, n) = \frac{\sum_{i} b_i^p \cdot d_i^p}{\sum_{i} d_i^p} $$
