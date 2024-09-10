@@ -2,6 +2,13 @@
 layout: default
 title: Home
 ---
+
+<head>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+
 <div class="page">
   
   <header>
@@ -28,7 +35,6 @@ title: Home
 
   </header>
 
-<!-- 
 
 
   <section class="abstract-section">
@@ -40,13 +46,23 @@ title: Home
 
   <section class="bend-roll-section">
     <h2>Bend Roll</h2>
-    <img src="images/bendroll1.png" alt="Bend Roll Example 1" style="width: 100%; max-width: 600px; margin-top: 20px;">
-    <img src="images/bendroll2.png" alt="Bend Roll Example 2" style="width: 100%; max-width: 600px; margin-top: 20px;">
+    <img src="images/bendroll_1.png" alt="Bend Roll Example 1" style="width: 100%; max-width: 600px; margin-top: 20px;">
+    <img src="images/bendroll_2.png" alt="Bend Roll Example 2" style="width: 100%; max-width: 600px; margin-top: 20px;">
     <p class="message">
-      Pitch bends in MIDI data present a unique challenge due to their fine temporal granularity, which is not well captured by traditional fixed-time piano roll representations. To address this, we aggregate all pitch bend information that falls within each fixed time frame of the piano roll. Each pitch bend value, \( b_i \), is converted to semitone units and weighted by its corresponding duration \( d_i \) within that time frame. The aggregated bend roll is then computed for the entire sequence as shown in the equation below:
-      This weighted averaging process allows us to accurately capture the pitch bend information within the fixed time bins of the piano roll, ensuring that the expressive nuances of the bends are well-preserved. These bend roll features are crucial for modeling pitch variations in both the DiffSynth and DiffBend architectures.
+      To encode MIDI input, we employed the piano roll representation, which facilitates encoding polyphonic pitches while aligning them with the mel spectrogram at the frame level.To capture the onset and offset of each note alongside its frame-wise activation, we utilize three types of piano rolls: frame, onset, offset.
+      In addition to these binary piano rolls, pitch bend information is also included in the model's input. In MIDI, pitch bends are discrete events that specify a pitch bend value and its corresponding time, enabling smooth pitch changes. However, these events often occur more frequently than traditional piano roll representations can capture. Thus, we calculate frame-wise pitch bend values using a weighted average of pitch bend events within each frame, resulting in a continuous-valued matrix.    </p>
+    <p class="equation">
+        <!-- The encoded result $R_{\text{bend}} \in (-1, 1)^{P \times T}$ is computed using the equation below: -->
+      $$ R_\text{bend}(p, n) = \frac{\sum_{i} b_i^p \cdot d_i^p}{\sum_{i} d_i^p} $$
+        <!-- Here, $b_i^p$ represents the $i$-th pitch bend value (in semitones) for pitch $p$, and $d_i^p$ is the duration for which that event is active within the time frame $n$. The duration of a pitch bend event is defined as the time it remains active until the next event. -->
     </p>
-  </section>
+    <p class="message">
+      This method is versatile and can be applied to both monophonic and polyphonic music, where multiple pitches may undergo different pitch bends simultaneously.
+    </p>
+  
+    
+  
+    </section>
 
   <section class="model-architecture-section">
     <h2>Model Architecture</h2>
@@ -54,7 +70,7 @@ title: Home
     <p class="message">
       The DiffSynth model processes inputs including the Mel-spectrogram, diffusion time step, performer ID, and piano rolls, using a GRU layer and Transformer Encoder Blocks to generate a feature sequence for denoising. DiffBend modifies this by directly handling the pitch bend roll and applying a selective noise addition strategy to focus on dynamic pitch variations. These models together enhance the expressiveness of synthesized violin performances by effectively incorporating detailed pitch variations.
     </p>
-  </section> -->
+  </section>
 
 
 <!--   
