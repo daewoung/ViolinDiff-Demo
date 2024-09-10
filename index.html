@@ -70,7 +70,7 @@ title: Home
       <img src="images/bendroll_2.png" alt="Bend Roll Example 2" style="width: 100%; max-width: 600px; margin-top: 20px;">
 
       <p class="message">
-        To encode MIDI input, we employed piano roll representation as it enables encoding polyphonic pitch while being aligned to mel spectrogram at the frame level. If a mel spectrogram \( M \in \mathbb{R}^{F\times T} \) consists of \( T \) time frames and \( F \) mel bins, the input piano roll is a 2D binary matrix \( R \in \{0, 1\}^{P \times T} \), where \( P \) denotes the number of pitches. To emphasize the importance of the onset and offset of each note along with its frame-wise activation, we employed three different types of rolls: \( R_{\text{frame}}, R_{\text{onset}}, R_{\text{offset}} \). We followed the definition of each roll from piano music transcription research~\cite{hawthorne2018}.
+        To encode MIDI input, we employed piano roll representation as it enables encoding polyphonic pitch while being aligned to mel spectrogram at the frame level. If a mel spectrogram \( M \in \mathbb{R}^{F\times T} \) consists of \( T \) time frames and \( F \) mel bins, the input piano roll is a 2D binary matrix \( R \in \{0, 1\}^{P \times T} \), where \( P \) denotes the number of pitches. To emphasize the importance of the onset and offset of each note along with its frame-wise activation, we employed three different types of rolls: \( R_{\text{frame}}, R_{\text{onset}}, R_{\text{offset}} \).
         <br><br>
         In addition to these multiple binary piano rolls, we also include pitch bend information in the model's input. Pitch bends in MIDI are discrete events, each with a pitch bend value and a corresponding time, which enable the continuous change of pitch. These events often occur at finer intervals than what traditional piano roll representations can capture. Therefore, we calculate frame-wise pitch bend value by weighted average considering the duration of pitch bend events within each frame, which results in \( R_{\text{bend}} \in (-1, 1)^{P \times T} \).
         <br><br>
@@ -80,19 +80,37 @@ title: Home
         <br><br>
         Here, \( b_i^p \) is the \( i \)-th pitch bend value (in semitones) for pitch \( p \), and \( d_i^p \) is the duration for which that event is active within time frame \( n \). The duration of a pitch bend event is defined as the time it remains active until the next event. This method generalizes well to both monophonic and polyphonic music, where multiple pitches may undergo different pitch bends simultaneously.
       </p>
-    
-      <!-- <p class="equation">
-        $$ R_\text{bend}(p, n) = \frac{\sum_{i} b_i^p \cdot d_i^p}{\sum_{i} d_i^p} $$
-      </p>
-    
-      <p class="message">
-        Here, \( b_i^p \) is the \( i \)-th pitch bend value (in semitones) for pitch \( p \), and \( d_i^p \) is the duration for which that event is active within time frame \( n \). The duration of a pitch bend event is defined as the time it remains active until the next event. This method generalizes well to both monophonic and polyphonic music, where multiple pitches may undergo different pitch bends simultaneously.
-      </p> -->
     </section>
     
   <section class="model-architecture-section">
     <h2>Model Architecture</h2>
     <img src="images/model_architecture.jpeg" alt="Model Architecture Diagram" style="width: 100%; max-width: 600px; margin-top: 20px;">
+
+    
+  <!-- Synthesis Module -->
+  <div class="subsection">
+    <h3>Synthesis Module</h3>
+    <div class="message">
+      In the synthesis module, the encoder processes the piano rolls \( \mathcal{R} \) as input through a GRU layer followed by Transformer Encoder Blocks, generating the note feature sequence \( E_R \). A simple linear layer generates an auxiliary mel spectrogram \( \tilde{M} \) from \( E_R \). The denoiser uses a non-causal WaveNet architecture, incorporating performer conditioning through FiLM layers. To denoise the noisy mel spectrogram \( M_t \in \mathbb{R}^{F\times T} \), a time step embedding \( e_t \in \mathbb{R}^D \) is added to each time frame of \( M_t \) using a linear layer, with FiLM layers further modulating the input.
+      <br><br>
+      The model is trained to minimize two L2 losses:
+      \[
+      \mathcal{L}_{\text{total}} = \mathcal{L}_{\text{simple}} + \mathcal{L}_{\text{aux}}
+      \]
+      where \( \mathcal{L}_{\text{simple}} \) follows the DDPM loss formulation and predicts the noise \( \epsilon \) added to \( M_t \), while \( \mathcal{L}_{\text{aux}} \) minimizes the error between the predicted auxiliary mel spectrogram \( \tilde{M} \) and the ground truth mel spectrogram \( M \).
+    </div>
+  </div>
+
+  <!-- Bend Estimation Module -->
+  <div class="subsection">
+    <h3>Bend Estimation Module</h3>
+    <div class="message">
+      The bend estimation module processes pitch bend data directly, without relying on an auxiliary mel spectrogram \( \tilde{M} \). Instead, the module operates on the noisy bend roll \( R_{\text{bend}_t} \), applying noise only to the regions where musical notes are active. Other regions are excluded from noise addition and loss calculation, allowing the model to focus on dynamic pitch variations.
+    </div>
+  </div>
+
+</section>
+
     <p class="message">
       The DiffSynth model processes inputs including the Mel-spectrogram, diffusion time step, performer ID, and piano rolls, using a GRU layer and Transformer Encoder Blocks to generate a feature sequence for denoising. DiffBend modifies this by directly handling the pitch bend roll and applying a selective noise addition strategy to focus on dynamic pitch variations. These models together enhance the expressiveness of synthesized violin performances by effectively incorporating detailed pitch variations.
     </p>
