@@ -44,7 +44,7 @@ title: Home
     </p>
   </section>
 
-  <section class="midi-encoding-section">
+  <!-- <section class="midi-encoding-section">
     <h2>Bend Roll</h2>
 
     <p class="message">
@@ -59,7 +59,7 @@ title: Home
       </p>
     <p class="message">
       This method is versatile and can be applied to both monophonic and polyphonic music, where multiple pitches may undergo different pitch bends simultaneously.
-    </p>
+    </p> -->
 
 
     </section>
@@ -84,7 +84,7 @@ title: Home
     
   <section class="model-architecture-section">
     <h2>Model Architecture</h2>
-    <img src="images/model_architecture.jpeg" alt="Model Architecture Diagram" style="width: 100%; max-width: 600px; margin-top: 20px;">
+    <img src="images/model_arch.jpeg" alt="Model Architecture Diagram" style="width: 100%; max-width: 600px; margin-top: 20px;">
     <img src="images/denoiser.jpeg" alt="Model Architecture Diagram" style="width: 100%; max-width: 600px; margin-top: 20px;">
 
     
@@ -120,12 +120,6 @@ title: Home
     </div>
   </div>
 
-</section>
-
-    <p class="message">
-      The DiffSynth model processes inputs including the Mel-spectrogram, diffusion time step, performer ID, and piano rolls, using a GRU layer and Transformer Encoder Blocks to generate a feature sequence for denoising. DiffBend modifies this by directly handling the pitch bend roll and applying a selective noise addition strategy to focus on dynamic pitch variations. These models together enhance the expressiveness of synthesized violin performances by effectively incorporating detailed pitch variations.
-    </p>
-  </section>
 
 
 <!--   
