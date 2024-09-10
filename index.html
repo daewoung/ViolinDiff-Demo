@@ -91,21 +91,32 @@ title: Home
   <div class="subsection">
     <h3>Synthesis Module</h3>
     <div class="message">
-      In the synthesis module, the encoder processes the piano rolls \( \mathcal{R} \) as input through a GRU layer followed by Transformer Encoder Blocks, generating the note feature sequence \( E_R \). A simple linear layer generates an auxiliary mel spectrogram \( \tilde{M} \) from \( E_R \). The denoiser uses a non-causal WaveNet architecture, incorporating performer conditioning through FiLM layers. To denoise the noisy mel spectrogram \( M_t \in \mathbb{R}^{F\times T} \), a time step embedding \( e_t \in \mathbb{R}^D \) is added to each time frame of \( M_t \) using a linear layer, with FiLM layers further modulating the input.
+      In the synthesis module, the encoder processes the rolls \( \mathcal{R} \) as input through a GRU layer, followed by Transformer Encoder Blocks, producing the note feature sequence \( E_R \). A simple linear layer then generates an auxiliary mel spectrogram \( \tilde{M} \) from \( E_R \). For the denoiser of the synthesis module, we adopt the non-causal WaveNet architecture with additional modifications to incorporate performer conditioning through FiLM layers.
       <br><br>
-      The model is trained to minimize two L2 losses:
+      To denoise the noisy mel spectrogram \( M_t \in \mathbb{R}^{F\times T} \), we first add a time step embedding \( e_t \in \mathbb{R}^D \) by passing it through a linear layer \( f: \mathbb{R}^D \rightarrow \mathbb{R}^F \) to each time frame of \( M_t \). The combined input is modulated again via a FiLM layer, using the auxiliary mel spectrogram \( \tilde{M} \) as a conditioning input.
+      <br><br>
+      Each residual block in the denoiser receives conditioning inputs \( e_t \), \( e_p \), and \( E_R \). The performer embedding \( e_p \) is processed through FiLM layers to modulate the internal processing within the residual block, while the time step embedding \( e_t \) and the note features \( E_R \) are added directly.
+      <br><br>
+      The model is trained to minimize the following loss function:
       \[
       \mathcal{L}_{\text{total}} = \mathcal{L}_{\text{simple}} + \mathcal{L}_{\text{aux}}
       \]
-      where \( \mathcal{L}_{\text{simple}} \) follows the DDPM loss formulation and predicts the noise \( \epsilon \) added to \( M_t \), while \( \mathcal{L}_{\text{aux}} \) minimizes the error between the predicted auxiliary mel spectrogram \( \tilde{M} \) and the ground truth mel spectrogram \( M \).
+      where the \( \mathcal{L}_{\text{simple}} \) loss follows the formulation used to predict the noise \( \epsilon \) added to the noisy mel spectrogram \( M_t \).
+      \[
+      \mathcal{L}_{\text{simple}} = \mathbb{E}_{M_0, \epsilon} \left[ \left\| \epsilon - \epsilon_\theta \left( \sqrt{\bar{\alpha}_t} M_0 + \sqrt{1 - \bar{\alpha}_t} \epsilon, t, c \right) \right\|^2 \right].
+      \]
+      In addition, the auxiliary loss \( \mathcal{L}_{\text{aux}} \) is used to minimize the L2 reconstruction error between the predicted auxiliary mel spectrogram \( \tilde{M} \) and the ground truth mel spectrogram \( M \).
     </div>
+
   </div>
 
   <!-- Bend Estimation Module -->
   <div class="subsection">
     <h3>Bend Estimation Module</h3>
     <div class="message">
-      The bend estimation module processes pitch bend data directly, without relying on an auxiliary mel spectrogram \( \tilde{M} \). Instead, the module operates on the noisy bend roll \( R_{\text{bend}_t} \), applying noise only to the regions where musical notes are active. Other regions are excluded from noise addition and loss calculation, allowing the model to focus on dynamic pitch variations.
+      The bend estimation module is adapted from the synthesis module to handle pitch bend data directly. Unlike the synthesis module, which conditions its denoising process on an auxiliary mel spectrogram \( \tilde{M} \), the bend estimation module operates directly on the noisy bend roll \( R_{\text{bend}_t} \).
+      <br><br>
+      During the diffusion, we only add noise to the regions with note activation. Other regions were excluded in noise addition and loss calculation.
     </div>
   </div>
 
