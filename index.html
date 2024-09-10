@@ -68,22 +68,26 @@ title: Home
       <h2>MIDI Encoding</h2>
       <img src="images/bendroll_1.png" alt="Bend Roll Example 1" style="width: 100%; max-width: 600px; margin-top: 20px;">
       <img src="images/bendroll_2.png" alt="Bend Roll Example 2" style="width: 100%; max-width: 600px; margin-top: 20px;">
-      
+
       <p class="message">
         To encode MIDI input, we employed piano roll representation as it enables encoding polyphonic pitch while being aligned to mel spectrogram at the frame level. If a mel spectrogram \( M \in \mathbb{R}^{F\times T} \) consists of \( T \) time frames and \( F \) mel bins, the input piano roll is a 2D binary matrix \( R \in \{0, 1\}^{P \times T} \), where \( P \) denotes the number of pitches. To emphasize the importance of the onset and offset of each note along with its frame-wise activation, we employed three different types of rolls: \( R_{\text{frame}}, R_{\text{onset}}, R_{\text{offset}} \). We followed the definition of each roll from piano music transcription research~\cite{hawthorne2018}.
-      </p>
-    
-      <p class="message">
+        <br><br>
         In addition to these multiple binary piano rolls, we also include pitch bend information in the model's input. Pitch bends in MIDI are discrete events, each with a pitch bend value and a corresponding time, which enable the continuous change of pitch. These events often occur at finer intervals than what traditional piano roll representations can capture. Therefore, we calculate frame-wise pitch bend value by weighted average considering the duration of pitch bend events within each frame, which results in \( R_{\text{bend}} \in (-1, 1)^{P \times T} \).
+        <br><br>
+        The encoded result \( R_{\text{bend}} \in (-1, 1)^{P \times T} \) is computed using the equation below:
+        <br><br>
+        $$ R_\text{bend}(p, n) = \frac{\sum_{i} b_i^p \cdot d_i^p}{\sum_{i} d_i^p} $$
+        <br><br>
+        Here, \( b_i^p \) is the \( i \)-th pitch bend value (in semitones) for pitch \( p \), and \( d_i^p \) is the duration for which that event is active within time frame \( n \). The duration of a pitch bend event is defined as the time it remains active until the next event. This method generalizes well to both monophonic and polyphonic music, where multiple pitches may undergo different pitch bends simultaneously.
       </p>
     
-      <p class="equation">
+      <!-- <p class="equation">
         $$ R_\text{bend}(p, n) = \frac{\sum_{i} b_i^p \cdot d_i^p}{\sum_{i} d_i^p} $$
       </p>
     
       <p class="message">
         Here, \( b_i^p \) is the \( i \)-th pitch bend value (in semitones) for pitch \( p \), and \( d_i^p \) is the duration for which that event is active within time frame \( n \). The duration of a pitch bend event is defined as the time it remains active until the next event. This method generalizes well to both monophonic and polyphonic music, where multiple pitches may undergo different pitch bends simultaneously.
-      </p>
+      </p> -->
     </section>
     
   <section class="model-architecture-section">
