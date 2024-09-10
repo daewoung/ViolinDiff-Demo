@@ -37,31 +37,12 @@ title: Home
 
 
 
-  <section class="abstract-section">
+  <!-- <section class="abstract-section">
     <h2>Abstract</h2>
     <p class="message">
       Synthesizing expressive violin performances is a complex task due to the need for intricate pitch variations, such as vibrato and glissando, which are often missing in standard MIDI data. To address this, we introduce a two-stage neural synthesis framework. The first stage, DiffBend, estimates the missing pitch bend information, while the second stage, DiffSynth, generates high-fidelity audio incorporating these expressive details. Our method is evaluated using Fréchet Audio Distance (FAD) and vibrato-specific metrics, demonstrating superior performance in both audio quality and expressiveness compared to existing methods. This highlights the critical role of accurate pitch bend modeling in improving the realism of synthesized violin performances.    
     </p>
   </section>
-
-  <!-- <section class="midi-encoding-section">
-    <h2>Bend Roll</h2>
-
-    <p class="message">
-      To encode MIDI input, we employed the piano roll representation, which facilitates encoding polyphonic pitches while aligning them with the mel spectrogram at the frame level.To capture the onset and offset of each note alongside its frame-wise activation, we utilize three types of piano rolls: frame, onset, offset.
-      In addition to these binary piano rolls, pitch bend information is also included in the model's input. In MIDI, pitch bends are discrete events that specify a pitch bend value and its corresponding time, enabling smooth pitch changes. However, these events often occur more frequently than traditional piano roll representations can capture. Thus, we calculate frame-wise pitch bend values using a weighted average of pitch bend events within each frame, resulting in a continuous-valued matrix.   
-      The encoded result \( R_{\text{bend}} \in (-1, 1)^{P \times T} \) is computed using the equation below:
-      </p>
-      <p class="equation">
-        The encoded result $R_{\text{bend}} \in (-1, 1)^{P \times T}$ is computed using the equation below:
-      $$ R_\text{bend}(p, n) = \frac{\sum_{i} b_i^p \cdot d_i^p}{\sum_{i} d_i^p} $$
-      Here, $b_i^p$ represents the $i$-th pitch bend value (in semitones) for pitch $p$, and $d_i^p$ is the duration for which that event is active within the time frame $n$. The duration of a pitch bend event is defined as the time it remains active until the next event.
-      </p>
-    <p class="message">
-      This method is versatile and can be applied to both monophonic and polyphonic music, where multiple pitches may undergo different pitch bends simultaneously.
-    </p> -->
-
-
     </section>
 
     <section class="midi-encoding-section">
@@ -88,7 +69,6 @@ title: Home
     <img src="images/denoiser.jpeg" alt="Model Architecture Diagram" style="width: 100%; max-width: 600px; margin-top: 20px;">
 
     
-  <!-- Synthesis Module -->
   <div class="subsection">
     <h3>Synthesis Module</h3>
     <div class="message">
@@ -111,7 +91,6 @@ title: Home
 
   </div>
 
-  <!-- Bend Estimation Module -->
   <div class="subsection">
     <h3>Bend Estimation Module</h3>
     <div class="message">
@@ -132,32 +111,4 @@ title: Home
   </section>
 
 
-<!--   
-  <div class="text-center">
-    <p>
-      <i class="fa fa-code-fork fa-3x"></i>
-    </p>
-
-    <p>
-      Welcome to the Violin Diffusion project! This research focuses on synthesizing expressive violin performances through advanced neural synthesis techniques.
-    </p>
-    
-    <h2>Abstract</h2>
-    <p>
-      Synthesizing expressive violin performances is a complex task due to the need for intricate pitch variations, such as vibrato and glissando, which are often missing in standard MIDI data. To address this, we introduce a two-stage neural synthesis framework. The first stage, <strong>DiffBend</strong>, estimates the missing pitch bend information, while the second stage, <strong>DiffSynth</strong>, generates high-fidelity audio incorporating these expressive details. Our method is evaluated using Fréchet Audio Distance (FAD) and vibrato-specific metrics, demonstrating superior performance in both audio quality and expressiveness compared to existing methods.
-    </p>
-
-    <p>
-      This is your landing page. It is the first page your users will see when 
-      they visit your website. Perhaps write a little bit about you or your 
-      website here.
-    </p>
-
-    <p>
-      Feel free to dive right in and make your changes to the code!<br />
-      Or check out Celeste on <a href="https://github.com/nicoelayda/celeste">GitHub</a> 
-      to learn more.
-    </p>
-  </div> -->
-  
-</div>
+</div> -->
