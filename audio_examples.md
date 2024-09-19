@@ -180,71 +180,31 @@ title: Audio Examples
       </div>
     </div> <!-- Closing audio-container-three -->
   <p>Note: You can notice a clear difference in the clarity of the vibrato, particularly towards the end of the samples.</p>
-  </section>
-</div>
 
+  <div class="audio-container-three">
+    <div class="audio-block-three">
+      <p>Org Audio</p>
+      <audio controls>
+        <source src="audio/Wohlfahrt_Op45-01_org_1.wav">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="audio-block-three">
+      <p>ViolinDiff</p>
+      <audio controls>
+        <source src="audio/Wohlfahrt_Op45-01_VD_1.wav">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="audio-block-three">
+      <p>NoBend</p>
+      <audio controls>
+        <source src="audio/Wohlfahrt_Op45-01_Nobend_1.wav">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div> <!-- Closing audio-container-three -->
+  <p>Note: You can notice a clear difference in the clarity of the vibrato, particularly towards the end of the samples.</p>
+</section>
 
-  
-  <section class="audio-comparison">
-    <div class="audio-container">
-      <div class="audio-block">
-        <p>Original</p>
-        <audio controls>
-          <source src="vocoder/Kayser_Op20-36_org_7.wav">
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-      <div class="audio-block">
-        <p>Vocoder</p>
-        <audio controls>
-          <source src="vocoder/Kayser_Op20-36_vocoder_7.wav">
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-    <div class="audio-container">
-      <div class="audio-block">
-        <p>Original</p>
-        <audio controls>
-          <source src="vocoder/Wohlfahrt_Op45-30_org_0.wav">
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-      <div class="audio-block">
-        <p>Vocoder</p>
-        <audio controls>
-          <source src="vocoder/Wohlfahrt_Op45-30_vocoder_0.wav">
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-    <div class="audio-container">
-      <div class="audio-block">
-        <p>Original</p>
-        <audio controls>
-          <source src="vocoder/Paganini_Op01-05_org_15.wav">
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-      <div class="audio-block">
-        <p>Vocoder</p>
-        <audio controls>
-          <source src="vocoder/Paganini_Op01-05_vocoder_15.wav">
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-    <div class="audio-container">
-      <div class="audio-block">
-        <p>Original</p>
-        <audio controls>
-          <source src="vocoder/Paganini_Op01-13_org_14.wav">
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-      <div class="audio-block">
-        <p>Vocoder</p>
-        <audio controls>
-          <source src="vocoder/Paganini_Op01-13_vocoder_14.wav">
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-  </section>
   
