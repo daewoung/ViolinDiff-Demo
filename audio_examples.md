@@ -185,26 +185,50 @@ title: Audio Examples
     <div class="audio-block-three">
       <p>Org Audio</p>
       <audio controls>
-        <source src="audio/Wohlfahrt_Op45-01_org_1.wav">
+        <source src="audio/Paganini_Op01-05_org_17.wav">
         Your browser does not support the audio element.
       </audio>
     </div>
     <div class="audio-block-three">
       <p>ViolinDiff</p>
       <audio controls>
-        <source src="audio/Wohlfahrt_Op45-01_VD_1.wav">
+        <source src="audio/Paganini_Op01-05_VD_17.wav">
         Your browser does not support the audio element.
       </audio>
     </div>
     <div class="audio-block-three">
       <p>NoBend</p>
       <audio controls>
-        <source src="audio/Wohlfahrt_Op45-01_Nobend_1.wav">
+        <source src="audio/Paganini_Op01-05_Nobend_17.wav">
         Your browser does not support the audio element.
       </audio>
     </div>
   </div> <!-- Closing audio-container-three -->
-  <p>Note: You can notice a clear difference in the clarity of the vibrato, particularly towards the end of the samples.</p>
+  <p>Note: The NoBend version has out-of-tune high notes at around 2 seconds and 2:17.</p>
+
+  <div class="audio-container-three">
+    <div class="audio-block-three">
+      <p>Org Audio</p>
+      <audio controls>
+        <source src="audio/Wohlfahrt_Op45-01_org_0.wav">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="audio-block-three">
+      <p>ViolinDiff</p>
+      <audio controls>
+        <source src="audio/Wohlfahrt_Op45-01_VD_0.wav">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="audio-block-three">
+      <p>NoBend</p>
+      <audio controls>
+        <source src="audio/Wohlfahrt_Op45-01_Nobend_0.wav">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div> <!-- Closing audio-container-three -->
+  <p>Note: While ViolinDiff's predicted bends do not perfectly match the original audio's articulation, it still offers some control over technique. In contrast, the NoBend model lacks any control over articulation, making it unable to replicate the variations in playing style.</p>
 </section>
 
-  
