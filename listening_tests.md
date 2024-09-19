@@ -46,8 +46,8 @@ title: Listening Test Examples
   <p>The evaluation was carried out using the MUSHRA <cite>{1}</cite> protocol, a standardized tool for subjective audio quality assessment. Participants rated multiple models, including:</p>
 
   <ul>
-    <li><strong>Bends Model</strong>: Our Proposed model that includes pitch bend information to enhance expressiveness and realism.</li>
-    <li><strong>NoBends Model</strong>: Against a version of DiffSynth trained without pitch bend information</li>
+    <li><strong>ViolinDiff</strong>: Our Proposed model</li>
+    <li><strong>NoBend Model</strong>: Against a version of DiffSynth trained without pitch bend information</li>
     <li><strong>Hawthorne et al.</strong> <cite>{2}</cite>: A multi-instrument diffusion-based model focused on synthesizing various instruments in polyphonic contexts.</li>
     <li><strong>Maman et al.</strong> <cite>{3}</cite>: A model using performer embeddings to better capture timbre and style in orchestral instrument synthesis.</li>
     <li><strong>GM Soundfont (Low Anchor)</strong>: The lowest quality baseline, serving as an anchor point for comparison.</li>
@@ -74,7 +74,7 @@ title: Listening Test Examples
         </audio>
       </div>
       <div class="audio-block">
-        <p>Bend Model</p>
+        <p>ViolinDiff</p>
         <audio controls>
           <source src="bend_segment_Kayser_Op20-36_performer_2.wav">
           Your browser does not support the audio element.
@@ -122,7 +122,7 @@ title: Listening Test Examples
         </audio>
       </div>
       <div class="audio-block">
-        <p>Bend Model</p>
+        <p>ViolinDiff</p>
         <audio controls>
           <source src="bend_segment_ysaye_performer_12.wav">
           Your browser does not support the audio element.
@@ -170,7 +170,7 @@ title: Listening Test Examples
         </audio>
       </div>
       <div class="audio-block">
-        <p>Bend Model</p>
+        <p>ViolinDiff</p>
         <audio controls>
           <source src="bend_segment_Paganini_Op01-13_performer_15.wav">
           Your browser does not support the audio element.
@@ -218,7 +218,7 @@ title: Listening Test Examples
         </audio>
       </div>
       <div class="audio-block">
-        <p>Bend Model</p>
+        <p>ViolinDiff</p>
         <audio controls>
           <source src="bend_segment_Paganini_Op01-05_performer_12.wav">
           Your browser does not support the audio element.
@@ -266,7 +266,7 @@ title: Listening Test Examples
         </audio>
       </div>
       <div class="audio-block">
-        <p>Bend Model</p>
+        <p>ViolinDiff</p>
         <audio controls>
           <source src="bend_segment_allegro_performer_13.wav">
           Your browser does not support the audio element.
@@ -314,7 +314,7 @@ title: Listening Test Examples
         </audio>
       </div>
       <div class="audio-block">
-        <p>Bend Model</p>
+        <p>ViolinDiff</p>
         <audio controls>
           <source src="bend_segment_Paganini_Op01-24_performer_15.wav">
           Your browser does not support the audio element.
@@ -362,7 +362,7 @@ title: Listening Test Examples
         </audio>
       </div>
       <div class="audio-block">
-        <p>Bend Model</p>
+        <p>ViolinDiff</p>
         <audio controls>
           <source src="bend_segment_Wohlfahrt_Op45-60_performer_1.wav">
           Your browser does not support the audio element.
@@ -410,7 +410,7 @@ title: Listening Test Examples
         </audio>
       </div>
       <div class="audio-block">
-        <p>Bend Model</p>
+        <p>ViolinDiff</p>
         <audio controls>
           <source src="bend_segment_thais_performer_12.wav">
           Your browser does not support the audio element.
@@ -458,7 +458,7 @@ title: Listening Test Examples
         </audio>
       </div>
       <div class="audio-block">
-        <p>Bend Model</p>
+        <p>ViolinDiff</p>
         <audio controls>
           <source src="bend_segment_Paganini_Op01-24_performer_12.wav">
           Your browser does not support the audio element.
@@ -506,7 +506,7 @@ title: Listening Test Examples
         </audio>
       </div>
       <div class="audio-block">
-        <p>Bend Model</p>
+        <p>ViolinDiff</p>
         <audio controls>
           <source src="bend_segment_Paganini_Op01-13_performer_13.wav">
           Your browser does not support the audio element.
