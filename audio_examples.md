@@ -158,27 +158,28 @@ title: Audio Examples
   <section class="audio-comparison-three">
     <div class="audio-container-three">
       <div class="audio-block-three">
-        <p>NoBend Sample 1</p>
+        <p>Org Audio</p>
         <audio controls>
-          <source src="vocoder/NoBend_Sample1.wav">
+          <source src="audio/Wohlfahrt_Op45-01_org_1.wav">
           Your browser does not support the audio element.
         </audio>
       </div>
       <div class="audio-block-three">
-        <p>ViolinDiff Sample 1</p>
+        <p>ViolinDiff</p>
         <audio controls>
-          <source src="vocoder/ViolinDiff_Sample1.wav">
+          <source src="audio/Wohlfahrt_Op45-01_VD_1.wav">
           Your browser does not support the audio element.
         </audio>
       </div>
       <div class="audio-block-three">
-        <p>ViolinDiff Sample 2</p>
+        <p>NoBend</p>
         <audio controls>
-          <source src="vocoder/ViolinDiff_Sample2.wav">
+          <source src="audio/Wohlfahrt_Op45-01_Nobend_1.wav">
           Your browser does not support the audio element.
         </audio>
       </div>
     </div> <!-- Closing audio-container-three -->
+  <p>Note: You can notice a clear difference in the clarity of the vibrato, particularly towards the end of the samples.</p>
   </section>
 </div>
 
