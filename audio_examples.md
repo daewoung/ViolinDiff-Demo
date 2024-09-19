@@ -11,7 +11,7 @@ title: Audio Examples
       border: 1px solid #e0e0e0;
       background-color: #f9f9f9;
       width: 100%; /* 가로를 페이지 전체로 설정 */
-      max-width: 1200px; /* 최대 너비 제한 */
+      max-width: 2000px; /* 최대 너비 제한 */
       margin: 0 auto; /* 가운데 정렬 */
     }
 
