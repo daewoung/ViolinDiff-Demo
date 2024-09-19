@@ -51,14 +51,14 @@ title: Audio Examples
       <div class="audio-block">
         <p>Original</p>
         <audio controls>
-          <source src="/vocoder/Kayser_Op20-36_org_7.wav">
+          <source src="vocoder/Kayser_Op20-36_org_7.wav">
           Your browser does not support the audio element.
         </audio>
       </div>
       <div class="audio-block">
         <p>Vocoder</p>
         <audio controls>
-          <source src="/vocoder/Kayser_Op20-36_vocoder_7.wav">
+          <source src="vocoder/Kayser_Op20-36_vocoder_7.wav">
           Your browser does not support the audio element.
         </audio>
       </div>
