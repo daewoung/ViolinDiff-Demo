@@ -40,7 +40,7 @@ title: Home
   <section class="abstract-section">
     <h2>Abstract</h2>
     <p class="message">
-      Synthesizing expressive violin performances is a complex task due to the need for intricate pitch variations, such as vibrato and glissando, which are often missing in standard MIDI data. To address this, we introduce a two-stage neural synthesis framework. The first stage, DiffBend, estimates the missing pitch bend information, while the second stage, DiffSynth, generates high-fidelity audio incorporating these expressive details. Our method is evaluated using Fréchet Audio Distance (FAD) and vibrato-specific metrics, demonstrating superior performance in both audio quality and expressiveness compared to existing methods. This highlights the critical role of accurate pitch bend modeling in improving the realism of synthesized violin performances.    
+      Modeling the natural contour of fundamental frequency (F0) plays a critical role in music audio synthesis. However, transcribing and managing multiple F0 contours in polyphonic music is challenging, and explicit F0 contour modeling has not yet been explored for polyphonic instrumental synthesis. In this paper, we present ViolinDiff, a two-stage diffusion-based synthesis framework. For a given violin MIDI file, the first stage estimates the F0 contour as pitch bend information, and the second stage generates mel spectrogram incorporating these expressive details. The quantitative metrics and listening test results show that the proposed model generates more realistic violin sounds than the model without explicit pitch bend modeling.
     </p>
   </section>
     </section>
