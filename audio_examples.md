@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Listening Test Examples
+title: Audio Examples
 ---
 <head>
   <style>
@@ -40,75 +40,28 @@ title: Listening Test Examples
 
 
 <div class="page">
-  <h2>Listening Test - Realism Evaluation</h2>
-  <p>We conducted a <strong>realism evaluation</strong> to focusing on how well the pitch expression and overall timbre of the synthesized samples matched those of actual violin performances. </p>
+  <h2>Vocoder Quality</h2>
+  <p> Here, we provide examples to illustrate the quality of the Soundstream vocoder, which sets an upper bound on the quality of our generated performances. </p>
 
-  <p>The evaluation was carried out using the MUSHRA <cite>{1}</cite> protocol, a standardized tool for subjective audio quality assessment. Participants rated multiple models, including:</p>
-
-  <ul>
-    <li><strong>ViolinDiff</strong>: Our Proposed model</li>
-    <li><strong>NoBend Model</strong>: Against a version of DiffSynth trained without pitch bend information</li>
-    <li><strong>Hawthorne et al.</strong> <cite>{2}</cite>: A multi-instrument diffusion-based model focused on synthesizing various instruments in polyphonic contexts.</li>
-    <li><strong>Maman et al.</strong> <cite>{3}</cite>: A model using performer embeddings to better capture timbre and style in orchestral instrument synthesis.</li>
-    <li><strong>GM Soundfont (Low Anchor)</strong>: The lowest quality baseline, serving as an anchor point for comparison.</li>
-  </ul>
-
-  <h3>References</h3>
-  <ol>
-    <li>ITU, “Method for the subjective assessment of intermediate quality level of audio systems,” BS.1534, 2014.</li>
-    <li>Hawthorne et al.“Multi-instrument music synthesis with spectrogram diffusion,” in Proceedings of the ISMIR, 2022</li>
-    <li>Maman et al. "Performance conditioning for diffusion-based multi-instrument music synthesis,” in ICASSP, 2024</li>
-  </ol>
-
-<p>We would like to extend our gratitude to Ben Maman for providing the essential test files, which greatly contributed to this evaluation.</p>
 
   
   <section class="audio-comparison">
     <h2>Kayser_Op20-36</h2>
     <div class="audio-container">
       <div class="audio-block">
-        <p>Original Audio</p>
+        <p>Original</p>
         <audio controls>
-          <source src="original_segment_Kayser_Op20-36_performer_2.wav">
+          <source src="/vocoder/Kayser_Op20-36_org_7.wav">
           Your browser does not support the audio element.
         </audio>
       </div>
       <div class="audio-block">
-        <p>ViolinDiff</p>
+        <p>Vocoder</p>
         <audio controls>
-          <source src="bend_segment_Kayser_Op20-36_performer_2.wav">
+          <source src="/vocoder/Kayser_Op20-36_vocoder_7.wav">
           Your browser does not support the audio element.
         </audio>
       </div>
-      <div class="audio-block">
-        <p>NoBend Model</p>
-        <audio controls>
-          <source src="no_bend_segment_Kayser_Op20-36_performer_2.wav">
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-      <div class="audio-block">
-        <p>Hawth.</p>
-        <audio controls>
-          <source src="magenta_segment_Kayser_Op20-36_performer_2.wav">
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-      <div class="audio-block">
-        <p>Maman.</p>
-        <audio controls>
-          <source src="perfdiff_segment_Kayser_Op20-36_performer_2.wav">
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-      <div class="audio-block">
-        <p>GM</p>
-        <audio controls>
-          <source src="window_gm_segment_Kayser_Op20-36_performer_2.wav">
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-    </div>
   </section>
   
   <section class="audio-comparison">
