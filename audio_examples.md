@@ -153,7 +153,9 @@ title: Audio Examples
 
 <div class="page">
   <h2>Synthesized Samples</h2>
-  <p> We present long sample comparisons between the NoBend and ViolinDiff to demonstrate their performance differences.  </p>
+  <p> We present long sample comparisons between the NoBend and ViolinDiff to demonstrate their performance differences. 
+  <br>Note: Across the samples, you can hear differences in vibrato, pitch accuracy (out-of-tune), and articulation between the models.
+  </p>
 
   <section class="audio-comparison-three">
     <div class="audio-container-three">
@@ -179,7 +181,7 @@ title: Audio Examples
         </audio>
       </div>
     </div> <!-- Closing audio-container-three -->
-  <p>Note: You can notice a clear difference in the clarity of the vibrato, particularly towards the end of the samples.</p>
+  <!-- <p>Note: You can notice a clear difference in the clarity of the vibrato, particularly towards the end of the samples.</p> -->
 
   <div class="audio-container-three">
     <div class="audio-block-three">
@@ -204,7 +206,7 @@ title: Audio Examples
       </audio>
     </div>
   </div> <!-- Closing audio-container-three -->
-  <p>Note: The NoBend version has out-of-tune high notes at around 2 seconds and 2:17.</p>
+  <!-- <p>Note: The NoBend version has out-of-tune high notes at around 2 seconds and 2:17.</p> -->
 
   <div class="audio-container-three">
     <div class="audio-block-three">
@@ -229,6 +231,6 @@ title: Audio Examples
       </audio>
     </div>
   </div> <!-- Closing audio-container-three -->
-  <p>Note: While ViolinDiff's predicted bends do not perfectly match the original audio's articulation, it still offers some control over technique. In contrast, the NoBend model lacks any control over articulation, making it unable to replicate the variations in playing style.</p>
+  <!-- <p>Note: While ViolinDiff's predicted bends do not perfectly match the original audio's articulation, it still offers some control over technique. In contrast, the NoBend model lacks any control over articulation, making it unable to replicate the variations in playing style.</p> -->
 </section>
 
