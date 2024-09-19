@@ -41,7 +41,7 @@ title: Audio Examples
 
 <div class="page">
   <h2>Vocoder Quality</h2>
-  <p> Here, we provide examples to illustrate the quality of the Soundstream vocoder, which sets an upper bound on the quality of our generated performances. </p>
+  <p> Here, we provide examples to illustrate the quality of the Soundstream vocoder, which sets an upper bound on the quality of our generated audio. </p>
 
 
   
@@ -106,8 +106,8 @@ title: Audio Examples
           Your browser does not support the audio element.
         </audio>
       </div>
+    </div>
   </section>
-</div>
 
 
 
