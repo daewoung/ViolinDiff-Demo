@@ -15,3 +15,9 @@
   color: $post-title-color;
   padding: 0 0.3rem;
 }
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto 1rem; /* 중앙 정렬을 위해 margin: 0 auto 추가 */
+  border-radius: 5px;
+}
