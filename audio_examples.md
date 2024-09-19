@@ -38,7 +38,6 @@ title: Audio Examples
   </style>
 </head>
 
-
 <div class="page">
   <h2>Vocoder Quality</h2>
   <p> Here, we provide examples to illustrate the quality of the Soundstream vocoder, which sets an upper bound on the quality of our generated audio. </p>
@@ -59,6 +58,7 @@ title: Audio Examples
           Your browser does not support the audio element.
         </audio>
       </div>
+    </div> <!-- Closing audio-container -->
     <div class="audio-container">
       <div class="audio-block">
         <p>Original</p>
@@ -74,6 +74,7 @@ title: Audio Examples
           Your browser does not support the audio element.
         </audio>
       </div>
+    </div> <!-- Closing audio-container -->
     <div class="audio-container">
       <div class="audio-block">
         <p>Original</p>
@@ -89,6 +90,7 @@ title: Audio Examples
           Your browser does not support the audio element.
         </audio>
       </div>
+    </div> <!-- Closing audio-container -->
     <div class="audio-container">
       <div class="audio-block">
         <p>Original</p>
@@ -105,8 +107,9 @@ title: Audio Examples
         </audio>
       </div>
     </div> <!-- Closing audio-container -->
-  </section>
+  </section> <!-- Closing section -->
 </div> <!-- Closing page -->
+
 
 
 <div class="page">
