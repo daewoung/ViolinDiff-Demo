@@ -232,5 +232,106 @@ title: Audio Examples
     </div>
   </div> <!-- Closing audio-container-three -->
   <!-- <p>Note: While ViolinDiff's predicted bends do not perfectly match the original audio's articulation, it still offers some control over technique. In contrast, the NoBend model lacks any control over articulation, making it unable to replicate the variations in playing style.</p> -->
+
+
+  <section class="audio-comparison-three">
+    <div class="audio-container-three">
+      <div class="audio-block-three">
+        <p>Org Audio</p>
+        <audio controls>
+          <source src="audio/Paganini_Op01-13-a_org_13.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block-three">
+        <p>ViolinDiff</p>
+        <audio controls>
+          <source src="audio/Paganini_Op01-13-a_VD_13.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block-three">
+        <p>NoBend</p>
+        <audio controls>
+          <source src="audio/Paganini_Op01-13-a_Nobend_13.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+
+  <section class="audio-comparison-three">
+    <div class="audio-container-three">
+      <div class="audio-block-three">
+        <p>Org Audio</p>
+        <audio controls>
+          <source src="audio/Paganini_Op01-24_org_14.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block-three">
+        <p>ViolinDiff</p>
+        <audio controls>
+          <source src="audio/Paganini_Op01-24_VD_14.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block-three">
+        <p>NoBend</p>
+        <audio controls>
+          <source src="audio/Paganini_Op01-24_Nobend_14.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+
+  <section class="audio-comparison-three">
+    <div class="audio-container-three">
+      <div class="audio-block-three">
+        <p>Org Audio</p>
+        <audio controls>
+          <source src="audio/Wohlfahrt_Op45-30_org_0.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block-three">
+        <p>ViolinDiff</p>
+        <audio controls>
+          <source src="audio/Wohlfahrt_Op45-30_VD_0.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block-three">
+        <p>NoBend</p>
+        <audio controls>
+          <source src="audio/Wohlfahrt_Op45-30_Nobend_0.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+
+  <section class="audio-comparison-three">
+    <div class="audio-container-three">
+      <div class="audio-block-three">
+        <p>Org Audio</p>
+        <audio controls>
+          <source src="audio/Wohlfahrt_Op45-60_org_1.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block-three">
+        <p>ViolinDiff</p>
+        <audio controls>
+          <source src="audio/Wohlfahrt_Op45-60_VD_1.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block-three">
+        <p>NoBend</p>
+        <audio controls>
+          <source src="audio/Wohlfahrt_Op45-60_Nobend_1.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
 </section>
 

@@ -47,7 +47,7 @@ title: Listening Test Examples
 
   <ul>
     <li><strong>ViolinDiff</strong>: Our Proposed model</li>
-    <li><strong>NoBend Model</strong>: Against a version of DiffSynth trained without pitch bend information</li>
+    <li><strong>NoBend Model</strong>: Against a version of Synthesis Module trained without pitch bend information</li>
     <li><strong>Hawthorne et al.</strong> <cite>{2}</cite>: A multi-instrument diffusion-based model focused on synthesizing various instruments in polyphonic contexts.</li>
     <li><strong>Maman et al.</strong> <cite>{3}</cite>: A model using performer embeddings to better capture timbre and style in orchestral instrument synthesis.</li>
     <li><strong>GM Soundfont (Low Anchor)</strong>: The lowest quality baseline, serving as an anchor point for comparison.</li>
