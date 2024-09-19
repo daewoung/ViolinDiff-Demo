@@ -35,8 +35,47 @@ title: Audio Examples
       width: 100%;
       margin-top: 5px; /* 오디오 태그 위 간격 줄임 */
     }
+
+    .audio-comparison-three {
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      border: 1px solid #e0e0e0;
+      background-color: #f9f9f9;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .audio-container-three {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .audio-block-three {
+      width: 30%; /* 한 줄에 3개 */
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 5px;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 5px;
+    }
+
   </style>
 </head>
+
+
+
+
+
+
 
 <div class="page">
   <h2>Vocoder Quality</h2>
@@ -115,6 +154,33 @@ title: Audio Examples
 <div class="page">
   <h2>Synthesized Samples</h2>
   <p> We present long sample comparisons between the NoBend and ViolinDiff to demonstrate their performance differences.  </p>
+
+  <section class="audio-comparison-three">
+    <div class="audio-container-three">
+      <div class="audio-block-three">
+        <p>NoBend Sample 1</p>
+        <audio controls>
+          <source src="vocoder/NoBend_Sample1.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block-three">
+        <p>ViolinDiff Sample 1</p>
+        <audio controls>
+          <source src="vocoder/ViolinDiff_Sample1.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block-three">
+        <p>ViolinDiff Sample 2</p>
+        <audio controls>
+          <source src="vocoder/ViolinDiff_Sample2.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div> <!-- Closing audio-container-three -->
+  </section>
+</div>
 
 
   
