@@ -94,8 +94,6 @@ title: Home
   <div class="subsection">
     <h3>Bend Estimation Module</h3>
     <div class="message">
-      To evaluate the advantage of modeling pitch bends explicitly, we also designed a baseline model, <em>NoBend</em>, that does not use pitch bend information during the synthesis. The <em>NoBend</em> model only utilizes the synthesis module and takes $\mathcal{R}_{\text{w/o bend}}$ instead of $\mathcal{R}$, meaning it has to model the F0 trajectory implicitly without access to explicit pitch bend information.
-      <br>
       The bend estimation module is adapted from the synthesis module to handle pitch bend data directly. Unlike the synthesis module, which conditions its denoising process on an auxiliary mel spectrogram \( \tilde{M} \), the bend estimation module operates directly on the noisy bend roll \( R_{\text{bend}_t} \).
       During the diffusion, we only add noise to the regions with note activation. Other regions were excluded in noise addition and loss calculation.
     </div>
@@ -107,6 +105,10 @@ title: Home
     <img src="images/results3.png" alt="MUSHRA Results" style="width: 100%; max-width: 600px; margin-top: 20px;">
 
     <p class="message">
+      To evaluate the advantage of modeling pitch bends explicitly, we also designed a baseline model, <em>NoBend</em>, that does not use pitch bend information during the synthesis. 
+      The <em>NoBend</em> model only utilizes the synthesis module and takes \( \mathcal{R}_{\text{w/o bend}} \) instead of \ (mathcal{R}\), 
+      meaning it has to model the F0 trajectory implicitly without access to explicit pitch bend information.
+      <br><br>
       ViolinDiff outperformed the baseline model in vibrato accuracy, and FAD metrics, demonstrating the benefits of explicit pitch bend modeling.
       Listening tests showed ViolinDiff achieved the highest realism score among synthesized models. For detailed results, please refer to the full paper.
     </p>
