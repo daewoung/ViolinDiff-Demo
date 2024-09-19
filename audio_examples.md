@@ -61,6 +61,51 @@ title: Audio Examples
           Your browser does not support the audio element.
         </audio>
       </div>
+    <div class="audio-container">
+      <div class="audio-block">
+        <p>Original</p>
+        <audio controls>
+          <source src="vocoder/Wohlfahrt_Op45-30_org_0.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Vocoder</p>
+        <audio controls>
+          <source src="vocoder/Wohlfahrt_Op45-30_vocoder_0.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    <div class="audio-container">
+      <div class="audio-block">
+        <p>Original</p>
+        <audio controls>
+          <source src="vocoder/Paganini_Op01-05_org_15.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Vocoder</p>
+        <audio controls>
+          <source src="vocoder/Paganini_Op01-05_vocoder_15.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    <div class="audio-container">
+      <div class="audio-block">
+        <p>Original</p>
+        <audio controls>
+          <source src="vocoder/Paganini_Op01-13_org_14.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio-block">
+        <p>Vocoder</p>
+        <audio controls>
+          <source src="vocoder/Paganini_Op01-13_vocoder_14.wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
   </section>
   
   <section class="audio-comparison">
