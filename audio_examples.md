@@ -46,7 +46,6 @@ title: Audio Examples
 
   
   <section class="audio-comparison">
-    <h2>Kayser_Op20-36</h2>
     <div class="audio-container">
       <div class="audio-block">
         <p>Original</p>
